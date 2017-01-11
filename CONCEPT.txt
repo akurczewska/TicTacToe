@@ -1,0 +1,15 @@
+Gra kółko i krzyżyk.
+
+Do rozpoczęnia rozgrywki potrzebnych jest dwóch graczy. 
+Rozgrywka rozpoczyna się od przydzielenia znaków graczom (kółko/krzyżyk). 
+Następnie w odopowiedniej kolejności klienci wykonują ruchy. Jeżeli któryś z graczy odejdzie, gra zostaje przerwana. W przypadku zapełnienia całej planszy, rozgrywka kończy się remisem. Jeżeli natomiast, któryś z graczy postawił min. 5 znaków "w rzędzie", wybierany zostaje zwycięzca.
+
+Serwer napisany został w języku C.
+Klient napisany został w języku C++ przy pomocy QT Creatora.
+
+Projekt został zrealizowany w oparciu o protokół TCP, sockety i wątki.
+Do komunikacji przez TCP po stronie klienta potrzebne było utworzenie instancji klasy QTcpSocket oraz funkcji nasłuchującej na transmisje danych, w której odbywa się rozgrywka.
+
+Serwer posiada swój socket oraz przechowuje w strukturze deskryptory gniazd wszystkich graczy, aby możliwa była komunikacja.
+Klient tworzy socket przez, który gdy włącza grę nawiązuje połączenie z serwerem, który zapisuje informacje o nowym graczu w strukturze i sprawdza, czy jakiś klient również czeka na grę.
+
