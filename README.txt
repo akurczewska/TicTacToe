@@ -1,4 +1,5 @@
-Gra Kółko i krzyżyk
+﻿Gra Kółko i krzyżyk
+
 
 KOMPILACJA:
 Znajdując się kolejno w folderze klienta i serwera, w celu komilacji programu należy wpisać w terminalu: ./kompiluj
